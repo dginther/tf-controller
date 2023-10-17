@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: helloworld-tf
+  name: helloworld-tf-dev
 spec:
   interval: 1m
   url: https://github.com/dginther/tf-controller
@@ -19,7 +19,7 @@ spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: helloworld-tf
+    name: helloworld-tf-dev
   varsFrom:
     kind: Secret
     name: aws-credentials
