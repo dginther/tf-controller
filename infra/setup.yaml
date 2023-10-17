@@ -7,7 +7,7 @@ spec:
   interval: 1m
   url: https://github.com/dginther/tf-controller
   ref:
-    branch: main
+    branch: dev
 ---
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
