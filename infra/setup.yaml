@@ -16,6 +16,7 @@ metadata:
 spec:
   path: ./terraform
   approvePlan: "auto"
+  destroyResourcesOnDeletion: true
   interval: 1m
   sourceRef:
     kind: GitRepository
