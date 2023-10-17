@@ -16,3 +16,8 @@ resource "aws_instance" "test-instance" {
   ami = "ami-0f8e81a3da6e2510a"
   instance_type = "t3.micro"
 }
+
+resource "aws_instance" "test-instance2" {
+  ami = "ami-0f8e81a3da6e2510a"
+  instance_type = "t3.micro"
+}
