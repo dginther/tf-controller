@@ -2,12 +2,12 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: helloworld-tf-dev
+  name: helloworld-tf-staging
 spec:
   interval: 1m
   url: https://github.com/dginther/tf-controller
   ref:
-    branch: dev
+    branch: staging
 ---
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
@@ -20,7 +20,7 @@ spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: helloworld-tf-dev
+    name: helloworld-tf-staging
   varsFrom:
     - kind: Secret
       name: aws-credentials
